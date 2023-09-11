@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: bisque;
+}
+
+ul {
+	list-style: none;
+}
+
+.ashdwa, .blocktext {
+	color: #ffffff;
+}
+
+.wrapper {
+	padding: 20px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: calc(100% - 40px);
+	background-color: #ffffff;
+}
+
+.bluediov {
+	width: 100%;
+	background-color: #2196f3;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.greylist {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.greyitem {
+	padding: 20px;
+	background-color: #2f303a;
+	border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+	.greylist {
+		flex-direction: row;
+	}
+	.greyitem {
+		width: calc((100% - 20px) / 2);
+	}
+}
+
+@media (min-width: 1200px) {
+	.wrapper {
+		flex-direction: row;
+	}
+	.bluediov {
+		width: calc((100% - 20px) / 2);
+	}
+	.greylist {
+		width: calc((100% - 20px) / 2);
+	}
+}
